@@ -69,6 +69,7 @@ const StrategicPartners: React.FC = () => {
                         height={partner.height}
                         className="object-contain transition-all duration-300 group-hover:scale-110"
                         style={{ filter: 'brightness(0.9) contrast(1.1)' }}
+                        unoptimized
                       />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-r from-[#B671FF]/0 via-[#B671FF]/0 to-[#B671FF]/0 group-hover:from-[#B671FF]/5 group-hover:via-[#B671FF]/10 group-hover:to-[#B671FF]/5 transition-all duration-300 rounded-2xl"></div>
@@ -90,6 +91,7 @@ const StrategicPartners: React.FC = () => {
                         height={partner.height}
                         className="object-contain transition-all duration-300 group-hover:scale-110"
                         style={{ filter: 'brightness(0.9) contrast(1.1)' }}
+                        unoptimized
                       />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-r from-[#B671FF]/0 via-[#B671FF]/0 to-[#B671FF]/0 group-hover:from-[#B671FF]/5 group-hover:via-[#B671FF]/10 group-hover:to-[#B671FF]/5 transition-all duration-300 rounded-2xl"></div>

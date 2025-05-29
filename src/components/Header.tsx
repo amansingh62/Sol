@@ -77,6 +77,7 @@ export default function Header() {
                 height={40}
                 className="rounded-md relative z-10 group-hover:scale-105 transition-transform duration-200"
                 priority
+                unoptimized
               />
             </div>
             <span className="text-2xl font-semibold ml-2">

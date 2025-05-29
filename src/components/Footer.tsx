@@ -27,6 +27,7 @@ const Footer: React.FC = () => {
                 width={56}
                 height={56}
                 className="rounded-lg relative z-10 transform group-hover:scale-105 transition-transform duration-300" 
+                unoptimized
               />
             </div>
             <span className="text-3xl md:text-4xl font-bold ml-4">Sol<span className='bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] text-transparent bg-clip-text'>Echo</span></span>
