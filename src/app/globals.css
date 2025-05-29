@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: linear-gradient(to right, #B671FF, #C577EE, #E282CA);
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Comic Relief", system-ui;
+  --font-mono: "Comic Relief", system-ui;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: linear-gradient(to right, #B671FF, #C577EE, #E282CA);
+    --foreground: linear-gradient(to right, #B671FF, #C577EE, #E282CA);
   }
 }
 
+html,
 body {
-  background: var(--background);
+  background: linear-gradient(to right, #B671FF, #C577EE, #E282CA);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", system-ui;
+  min-height: 100vh;
+}
+
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
