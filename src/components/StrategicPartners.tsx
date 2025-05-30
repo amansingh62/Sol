@@ -30,10 +30,10 @@ const StrategicPartners: React.FC = () => {
     { src: "/coinmarketcap.png", alt: "CoinMarketCap", width: 160, height: 48 },
     { src: "/DexScreener.png", alt: "DexScreener", width: 140, height: 48 },
     { src: "/MEXC.png", alt: "MEXC", width: 144, height: 48 },
-    { src: "/KuCoin.png", alt: "KuCoin", width: 120, height: 48 },
-    { src: "/Solana.png", alt: "Solana", width: 160, height: 48 },
-    { src: "/Phantom.avif", alt: "Phantom", width: 160, height: 48 },
-    { src: "/Backpack.png", alt: "Backpack", width: 160, height: 48 },
+    { src: "/KuCoin.png", alt: "KuCoin", width: 50, height: 48 },
+    { src: "/sol (2).png", alt: "Solana", width: 50, height: 48 },
+    { src: "/phantom1.png", alt: "Phantom", width: 160, height: 64 },
+    { src: "/Backpack.png", alt: "Backpack", width: 160, height: 64 },
     { src: "/drip.png", alt: "Drip", width: 96, height: 48 }
   ];
 
@@ -61,13 +61,13 @@ const StrategicPartners: React.FC = () => {
               {partners.map((partner, index) => (
                 <div key={index} className="partner-logo group">
                   <div className="relative w-48 h-32 flex items-center justify-center rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20 group-hover:shadow-lg group-hover:shadow-purple-500/20">
-                    <div className="relative max-h-12 max-w-32">
+                    <div className="relative h-12 w-full flex items-center justify-center">
                       <Image
                         src={partner.src}
                         alt={partner.alt}
                         width={partner.width}
                         height={partner.height}
-                        className="object-contain transition-all duration-300 group-hover:scale-110"
+                        className="object-contain h-full w-auto transition-all duration-300 group-hover:scale-110"
                         style={{ filter: 'brightness(0.9) contrast(1.1)' }}
                         unoptimized
                       />
@@ -83,13 +83,13 @@ const StrategicPartners: React.FC = () => {
               {partners.map((partner, index) => (
                 <div key={`duplicate-${index}`} className="partner-logo group">
                   <div className="relative w-48 h-32 flex items-center justify-center rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20 group-hover:shadow-lg group-hover:shadow-purple-500/20">
-                    <div className="relative max-h-12 max-w-32">
+                    <div className="relative h-12 w-full flex items-center justify-center">
                       <Image
                         src={partner.src}
                         alt={partner.alt}
                         width={partner.width}
                         height={partner.height}
-                        className="object-contain transition-all duration-300 group-hover:scale-110"
+                        className="object-contain h-full w-auto transition-all duration-300 group-hover:scale-110"
                         style={{ filter: 'brightness(0.9) contrast(1.1)' }}
                         unoptimized
                       />
@@ -168,11 +168,11 @@ const StrategicPartners: React.FC = () => {
             width: 8rem;
             height: 6rem;
           }
-          .partner-logo .max-h-12 {
-            max-height: 2rem;
+          .partner-logo .h-12 {
+            height: 2rem;
           }
-          .partner-logo .max-w-32 {
-            max-width: 6rem;
+          .partner-logo .w-full {
+            width: 6rem;
           }
         }
 
@@ -184,11 +184,11 @@ const StrategicPartners: React.FC = () => {
             width: 6rem;
             height: 4rem;
           }
-          .partner-logo .max-h-12 {
-            max-height: 1.5rem;
+          .partner-logo .h-12 {
+            height: 1.5rem;
           }
-          .partner-logo .max-w-32 {
-            max-width: 4rem;
+          .partner-logo .w-full {
+            width: 4rem;
           }
           .partners-slider {
             animation: scroll 20s linear infinite;

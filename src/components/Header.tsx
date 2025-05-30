@@ -13,7 +13,7 @@ export default function Header() {
   // Throttled scroll handler to prevent excessive re-renders
   useEffect(() => {
     let ticking = false;
-    
+
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -41,14 +41,14 @@ export default function Header() {
   const navItems = useMemo(() => [
     { icon: TbHome, text: "Home", href: "#" },
     { icon: TbCoin, text: "Buy $ECHO", href: "#" },
-  { icon: TbBook, text: "Docs", href: "https://solecho.gitbook.io/documents", target: "_blank", rel: "noopener noreferrer" },
+    { icon: TbBook, text: "Docs", href: "https://solecho.gitbook.io/documents", target: "_blank", rel: "noopener noreferrer" },
     { icon: TbUsers, text: "Community", href: "#" }
   ], []);
 
   // Memoize social links to prevent recreation
   const socialLinks = useMemo(() => [
-    { icon: TbBrandTelegram, href: "https://t.me/SolEcho" },
-    { icon: TbBrandTwitter, href: "https://x.com/SolEcho_io" }
+    { icon: TbBrandTwitter, href: "https://x.com/SolEcho_io" },
+    { icon: TbBrandTelegram, href: "https://t.me/SolEcho" }
   ], []);
 
   return (
@@ -58,7 +58,7 @@ export default function Header() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
         <span className="inline-block">
           The Future of Social Media is Decentralized,{" "}
-          <Link href="https://app.solecho.io/" target="_blank"  className="underline font-semibold hover:opacity-80 transition-opacity">
+          <Link href="https://app.solecho.io/" target="_blank" className="underline font-semibold hover:opacity-80 transition-opacity">
             Start echoing today!
           </Link>
         </span>
@@ -70,9 +70,9 @@ export default function Header() {
           <div className="flex items-center">
             <div className="w-10 h-10 relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-              <Image 
-                src="/image (1).png" 
-                alt="Solana Logo" 
+              <Image
+                src="/image (1).png"
+                alt="Solana Logo"
                 width={40}
                 height={40}
                 className="rounded-md relative z-10 group-hover:scale-105 transition-transform duration-200"

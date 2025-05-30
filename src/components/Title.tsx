@@ -213,7 +213,7 @@ export default function EnhancedTitle() {
           </p>
 
           {/* Feature highlights */}
-          <div className="flex flex-wrap justify-center gap-6 mt-8 animate-fade-in-up animation-delay-400 will-change-transform">
+          <div className="flex flex-wrap justify-center gap-6 mt-4 animate-fade-in-up animation-delay-400 will-change-transform">
             {features.map((feature, index) => (
               <FeatureItem
                 key={`${feature.text}-${index}`}
@@ -224,12 +224,12 @@ export default function EnhancedTitle() {
           </div>
 
           {/* Enhanced CTA Button */}
-          <div className="mt-12 animate-fade-in-up animation-delay-600 will-change-transform">
+          <div className="mt-6 mb-2 animate-fade-in-up animation-delay-600 will-change-transform">
             <EnhancedButton />
           </div>
 
           {/* Social proof */}
-          <div className="mt-8 text-white/60 animate-fade-in-up animation-delay-800 hover:text-white/70 transition-colors duration-300 will-change-auto">
+          <div className="mt-0 text-white/60 animate-fade-in-up animation-delay-800 hover:text-white/70 transition-colors duration-300 will-change-auto">
             <p className="text-sm">Join thousands of early adopters shaping the future of social media</p>
           </div>
         </div>
