@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from "next/link"
 import Image from "next/image"
 import Button from "./Button"
-import { TbBrandTelegram, TbBrandTwitter, TbMenu2, TbX, TbHome, TbBook, TbCoin, TbUsers } from 'react-icons/tb';
+import { TbBrandTelegram, TbBrandTwitter, TbMenu2, TbX, TbHome, TbBook, TbCoin } from 'react-icons/tb';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
