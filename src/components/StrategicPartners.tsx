@@ -28,12 +28,12 @@ const StrategicPartners: React.FC = () => {
   const partners = [
     { src: "/coin.png", alt: "CoinGecko", width: 120, height: 48 },
     { src: "/coinmarketcap.png", alt: "CoinMarketCap", width: 160, height: 48 },
-    { src: "/DexScreener.png", alt: "DexScreener", width: 140, height: 48 },
+    { src: "/dex-1.png", alt: "DexScreener", width: 140, height: 48 },
     { src: "/MEXC.png", alt: "MEXC", width: 144, height: 48 },
-    { src: "/KuCoin.png", alt: "KuCoin", width: 50, height: 48 },
-    { src: "/sol (2).png", alt: "Solana", width: 50, height: 48 },
+    { src: "/kuku.webp", alt: "KuCoin", width: 50, height: 48 },
+    { src: "/Solana-1.png", alt: "Solana", width: 50, height: 48 },
     { src: "/phantom1.png", alt: "Phantom", width: 160, height: 64 },
-    { src: "/Backpack.png", alt: "Backpack", width: 160, height: 64 },
+    { src: "/pack-1.png", alt: "Backpack", width: 120, height: 64 },
     { src: "/drip.png", alt: "Drip", width: 96, height: 48 }
   ];
 

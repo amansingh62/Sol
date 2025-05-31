@@ -47,7 +47,7 @@ export default function Roadmap() {
   }, []);
 
   return (
-    <section className="py-24 text-white relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+    <section id="roadmap" className="py-24 text-white relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
       {/* Animated background elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 animate-pulse"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#B671FF]/10 via-transparent to-transparent"></div>

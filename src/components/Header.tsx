@@ -39,11 +39,10 @@ export default function Header() {
 
   // Memoize navigation items to prevent recreation on every render
   const navItems = useMemo(() => [
-    { icon: TbHome, text: "Home", href: "#" },
-    { icon: TbCoin, text: "Buy $ECHO", href: "#" },
-    { icon: TbBook, text: "Docs", href: "https://solecho.gitbook.io/documents", target: "_blank", rel: "noopener noreferrer" },
-    { icon: TbUsers, text: "Community", href: "#" }
-  ], []);
+  { icon: TbHome, text: "Home", href: "#" },
+  { icon: TbCoin, text: "Buy $ECHO", href: "#", target: "_blank", rel: "noopener noreferrer" },
+  { icon: TbBook, text: "Docs", href: "https://solecho.gitbook.io/documents", target: "_blank", rel: "noopener noreferrer" },
+], []);
 
   // Memoize social links to prevent recreation
   const socialLinks = useMemo(() => [
@@ -58,7 +57,7 @@ export default function Header() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
         <span className="inline-block">
           The Future of Social Media is Decentralized,{" "}
-          <Link href="https://app.solecho.io/" target="_blank" className="underline font-semibold hover:opacity-80 transition-opacity">
+          <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:opacity-80 transition-opacity">
             Start echoing today!
           </Link>
         </span>
@@ -89,6 +88,8 @@ export default function Header() {
                 <Link
                   key={index}
                   href={item.href}
+                  target={item.target}
+                  rel={item.rel}
                   className="group flex items-center gap-2 font-medium text-sm px-3 py-2 rounded-xl hover:bg-white/5 transition-colors duration-200"
                 >
                   <item.icon className="w-4 h-4 text-[#B671FF] group-hover:scale-110 transition-transform duration-200" />
@@ -110,7 +111,7 @@ export default function Header() {
             </div>
 
             <div className="hidden md:block">
-              <Link href="https://app.solecho.io/" target="_blank" >
+              <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer">
                 <Button />
               </Link>
             </div>
@@ -138,6 +139,8 @@ export default function Header() {
               <Link
                 key={index}
                 href={item.href}
+                target={item.target}
+                rel={item.rel}
                 className="group flex items-center gap-3 font-medium text-sm px-4 py-3 rounded-xl hover:bg-white/5 transition-colors duration-200"
                 onClick={closeMobileMenu}
               >

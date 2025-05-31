@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import { Image, Video, FileText, Link2, Smile, Send, Coins, Lock, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 // Custom hook for typing effect
 const useTypingEffect = () => {
@@ -43,7 +44,7 @@ export default function CreatePosts() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
   const observerRef = useRef<IntersectionObserver | null>(null);
-  
+
   // Use the typing effect hook
   const placeholderText = useTypingEffect();
 
@@ -97,7 +98,7 @@ export default function CreatePosts() {
           }
         });
       },
-      { 
+      {
         threshold: 0.1,
         rootMargin: '50px' // Trigger animations slightly before element is visible
       }
@@ -131,7 +132,7 @@ export default function CreatePosts() {
   }, []);
 
   return (
-    <section className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 overflow-hidden">
+    <section id="create-posts" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 overflow-hidden">
       {/* Animated background elements - using transform3d for hardware acceleration */}
       <div className="absolute inset-0 overflow-hidden will-change-transform">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-blob transform-gpu"></div>
@@ -207,10 +208,12 @@ export default function CreatePosts() {
           <div className="mt-8 flex justify-end">
             <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 transform-gpu">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] opacity-100 transition-opacity duration-300 group-hover:opacity-90"></div>
-              <div className="relative flex items-center space-x-2 z-10">
-                <span>Post to SolEcho</span>
-                <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </div>
+              <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer">
+                <div className="relative flex items-center space-x-2 z-10">
+                  <span>Post to SolEcho</span>
+                  <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </Link>
               <div className="absolute inset-0 rounded-full overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transform -skew-x-12 -translate-x-full group-hover:animate-shine"></div>
               </div>

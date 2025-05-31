@@ -52,7 +52,7 @@ export default function EncryptedMessaging() {
     },
     {
       icon: Shield,
-      title: "Zero-Knowledge Protocol", 
+      title: "Zero-Knowledge Protocol",
       description: "We can't read your messages even if we wanted to. Your privacy is guaranteed by design."
     },
     {
@@ -134,9 +134,9 @@ export default function EncryptedMessaging() {
         }
       `}</style>
 
-      <section className="py-20 overflow-hidden relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+      <section id="messaging" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
         <div className="container mx-auto px-4">
-          <div 
+          <div
             className="text-center mb-16 section-header"
             ref={addToObserver}
           >

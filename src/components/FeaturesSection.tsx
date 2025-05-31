@@ -94,7 +94,7 @@ export default function FeaturesSection() {
           });
         });
       },
-      { 
+      {
         threshold: 0.1,
         rootMargin: '50px 0px' // Start animation slightly before element is visible
       }
@@ -121,7 +121,7 @@ export default function FeaturesSection() {
   }, []); // Empty dependency array since we're using refs
 
   return (
-    <section className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+    <section id="features" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 opacity-0 will-change-transform" ref={sectionRef}>
