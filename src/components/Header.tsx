@@ -40,7 +40,7 @@ export default function Header() {
   // Memoize navigation items to prevent recreation on every render
   const navItems = useMemo(() => [
     { icon: TbHome, text: "Home", href: "#" },
-    { icon: TbCoin, text: "Buy $ECHO", href: "#", target: "_blank", rel: "noopener noreferrer", isSpecial: true },
+    { icon: TbCoin, text: "Buy $ECHO", href: "https://pump.fun/coin/6st8YVjqDjeetAx9uySEXWcn9xj56dKirThNmUPNpump", target: "_blank", rel: "noopener noreferrer", isSpecial: true },
     { icon: TbBook, text: "Docs", href: "https://solecho.gitbook.io/documents", target: "_blank", rel: "noopener noreferrer" },
   ], []);
 
