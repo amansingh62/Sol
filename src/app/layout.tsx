@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "SolEcho",
+    default: "SolEcho: The Web3 Social Experience",
     template: "%s | SolEcho"
   },
   description: "SolEcho - Your Next-Generation Platform",
