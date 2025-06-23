@@ -3,13 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "SolEcho: The Web3 Social Experience",
+    default: "SolDart: The Web3 Social Experience",
     template: "%s | SolEcho"
   },
-  description: "SolEcho - Your Next-Generation Platform",
+  description: "SolDart - Your Next-Generation Platform",
   icons: {
-    icon: '/solecho (1).png',
-    shortcut: '/solecho (1).png',
+    icon: '/soldart_svg.png',
+    shortcut: '/soldart_svg.png',
   },
 };
 

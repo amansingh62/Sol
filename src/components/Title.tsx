@@ -7,20 +7,20 @@ import Link from 'next/link';
 // Memoized Enhanced Button Component
 const EnhancedButton = memo(() => {
   return (
-    <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 transform will-change-transform hover:scale-105 active:scale-95">
+    <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-black transition-all duration-300 transform will-change-transform hover:scale-105 active:scale-95">
       {/* Animated background */}
-      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] opacity-100 transition-opacity duration-300 group-hover:opacity-90 will-change-opacity"></div>
+      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] opacity-100 transition-opacity duration-300 group-hover:opacity-90 will-change-opacity"></div>
 
       {/* Button content */}
-      <Link 
-  href="https://app.solecho.io/" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="relative flex items-center space-x-2 z-10 font-semibold hover:opacity-80 transition-opacity"
->
-  <span>Get Started</span>
-  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 will-change-transform" />
-</Link>
+      <Link
+        href="https://app.solecho.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative flex items-center space-x-2 z-10 font-semibold hover:opacity-80 transition-opacity"
+      >
+        <span>Get Started</span>
+        <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 will-change-transform" />
+      </Link>
 
       {/* Shine effect */}
       <div className="absolute inset-0 rounded-full overflow-hidden">
@@ -141,24 +141,10 @@ export default function EnhancedTitle() {
         }
 
         /* Optimize background gradients */
-        .bg-optimized {
-          background: linear-gradient(135deg, #0f172a 0%, rgba(88, 28, 135, 0.2) 50%, #0f172a 100%);
-        }
-
-        .bg-pulse-optimized {
-          background: linear-gradient(90deg, rgba(168, 85, 247, 0.1) 0%, rgba(236, 72, 153, 0.1) 50%, rgba(168, 85, 247, 0.1) 100%);
-          animation: pulseGradient 4s ease-in-out infinite;
-        }
-
-        @keyframes pulseGradient {
-          0%, 100% { opacity: 0.5; }
-          50% { opacity: 0.8; }
-        }
+        
       `}</style>
 
-      <main className="relative flex flex-col items-center justify-center px-4 mx-auto text-center overflow-hidden min-h-screen bg-optimized">
-        {/* Optimized animated background gradients */}
-        <div className="absolute inset-0 bg-pulse-optimized will-change-opacity"></div>
+      <main className="relative flex flex-col items-center justify-center px-4 mx-auto text-center overflow-hidden min-h-screen bg-gradient-to-br from-slate-900 via-slate-900/20 to-slate-900">
 
         {/* Main content */}
         <div className="relative z-10 space-y-8 mt-24 md:mt-32 mb-20 md:mb-32 w-full px-4">
@@ -166,41 +152,41 @@ export default function EnhancedTitle() {
           <div className="relative inline-flex items-center px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-white/90 animate-fade-in hover:scale-105 transition-transform duration-300 hover:bg-white/10 group will-change-transform">
             {/* Shining border animation */}
             <div className="absolute inset-0 rounded-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#B671FF] to-transparent animate-shine-border will-change-transform"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32CD32] to-transparent animate-shine-border will-change-transform"></div>
             </div>
 
             {/* Thunder icon with enhanced glow */}
             <div className="relative mr-3">
-              <div className="absolute inset-0 bg-[#B671FF] blur-xl opacity-50 animate-pulse will-change-opacity"></div>
-              <Zap className="w-4 h-4 text-[#B671FF] relative z-10 animate-bounce-subtle will-change-transform" />
+              <div className="absolute inset-0 bg-[#32CD32] blur-xl opacity-50 animate-pulse will-change-opacity"></div>
+              <Zap className="w-4 h-4 text-[#32CD32] relative z-10 animate-bounce-subtle will-change-transform" />
             </div>
 
             {/* Text with gradient */}
-            <span className="relative bg-gradient-to-r from-white via-[#B671FF] to-white bg-clip-text text-transparent">
+            <span className="relative bg-gradient-to-r from-white via-[#32CD32] to-white bg-clip-text text-transparent">
               Next-Gen Social Experience
             </span>
 
             {/* Additional glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#B671FF]/20 via-[#C577EE]/20 to-[#E282CA]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 will-change-opacity"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#32CD32]/20 via-[#7CFC00]/20 to-[#90EE90]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 will-change-opacity"></div>
           </div>
 
           {/* Main heading with enhanced animations */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-6xl mx-auto animate-fade-in-up will-change-transform">
             The First{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300 will-change-opacity">
+              <span className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300 will-change-opacity">
                 Web3 Social Media
               </span>
             </span>
             {" "}built on{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300 will-change-opacity">
+              <span className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300 will-change-opacity">
                 Solana
               </span>
             </span>
             {" "}with AI technology to empower{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300 will-change-opacity">
+              <span className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300 will-change-opacity">
                 Decentralisation
               </span>
             </span>

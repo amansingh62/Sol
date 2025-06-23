@@ -24,7 +24,7 @@ export default function FeaturesSection() {
       icon: FileText,
       title: "Smart Contracts for Content",
       features: [
-        "Posts ('Echos') stored on-chain or in IPFS/Arweave",
+        "Posts ('Darts') stored on-chain or in IPFS/Arweave",
         "Immutable content resistant to censorship",
         "Verifiable content origin preventing misinformation",
         "Prevents fake news and content manipulation"
@@ -34,7 +34,7 @@ export default function FeaturesSection() {
       icon: Coins,
       title: "Tokenized Rewards",
       features: [
-        "Earn $ECHO tokens for engagement and contributions",
+        "Earn $DART tokens for engagement and contributions",
         "Staking mechanisms for passive income",
         "Tip creators through micropayments",
         "Promotes high-quality content and engagement"
@@ -121,14 +121,14 @@ export default function FeaturesSection() {
   }, []); // Empty dependency array since we're using refs
 
   return (
-    <section id="features" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+    <section id="features" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-slate-900/20 to-slate-900">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 opacity-0 will-change-transform" ref={sectionRef}>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Sol<span className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] text-transparent bg-clip-text">Echo</span> Features
+            Sol<span className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] text-transparent bg-clip-text">Dart</span> Features
           </h2>
-          <div className="w-64 h-1 bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] mx-auto"></div>
+          <div className="w-64 h-1 bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] mx-auto"></div>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-lg">
             SolEcho is a user-friendly protocol that allows users to
             communicate and interact in a fully decentralized ecosystem.
@@ -144,8 +144,8 @@ export default function FeaturesSection() {
               className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 opacity-0 group will-change-transform"
             >
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300 will-change-transform">
-                  <feature.icon className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300 will-change-transform">
+                  <feature.icon className="w-6 h-6 text-black" />
                 </div>
                 <h3 className="text-xl font-bold text-white">{feature.title}</h3>
               </div>
@@ -155,7 +155,7 @@ export default function FeaturesSection() {
                     key={idx}
                     className="flex items-start space-x-3 bg-white/5 backdrop-blur-sm p-3 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-[#B671FF] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#32CD32] flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-300">{item}</span>
                   </div>
                 ))}

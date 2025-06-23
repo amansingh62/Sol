@@ -134,7 +134,7 @@ export default function EncryptedMessaging() {
         }
       `}</style>
 
-      <section id="messaging" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+      <section id="messaging" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-slate-900/20 to-slate-900">
         <div className="container mx-auto px-4">
           <div
             className="text-center mb-16 section-header"
@@ -145,7 +145,7 @@ export default function EncryptedMessaging() {
                 End-to-End Encrypted Messaging
               </span>
             </h2>
-            <div className="w-64 h-1 bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] mx-auto"></div>
+            <div className="w-64 h-1 bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] mx-auto"></div>
             <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-lg">
               Send private messages that only the recipient can read. Your conversations are secured with military-grade encryption.
             </p>
@@ -159,13 +159,13 @@ export default function EncryptedMessaging() {
                 <div className="bg-black rounded-[40px] p-3 shadow-2xl border border-white/10">
                   <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-[32px] overflow-hidden h-[600px] relative">
                     {/* Phone header */}
-                    <div className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] p-4 flex items-center">
+                    <div className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] p-4 flex items-center">
                       <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3 border border-white/20">
-                        <span className="text-lg font-bold text-white">S</span>
+                        <span className="text-lg font-bold text-black">S</span>
                       </div>
                       <div>
-                        <p className="font-bold text-white">SolEcho Messenger</p>
-                        <p className="text-xs text-white/80">Online</p>
+                        <p className="font-bold text-black">SolEcho Messenger</p>
+                        <p className="text-xs text-black/80">Online</p>
                       </div>
                     </div>
 
@@ -173,8 +173,8 @@ export default function EncryptedMessaging() {
                     <div className="p-4 h-[500px] bg-gradient-to-br from-slate-900 to-slate-800 text-white overflow-y-auto flex flex-col">
                       {/* Received message */}
                       <div className="flex mb-4">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-3 flex-shrink-0">
-                          <MessageSquare className="w-5 h-5 text-white" />
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-3 flex-shrink-0">
+                          <MessageSquare className="w-5 h-5 text-black" />
                         </div>
                         <div className="bg-white/10 rounded-2xl rounded-tl-none p-4 shadow-lg max-w-[80%] border border-white/10">
                           <p className="text-sm">Hey! How&apos;s it going? 👋</p>
@@ -184,24 +184,24 @@ export default function EncryptedMessaging() {
 
                       {/* Sent message */}
                       <div className="flex mb-4 justify-end">
-                        <div className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] rounded-2xl rounded-tr-none p-4 shadow-lg max-w-[80%]">
+                        <div className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] rounded-2xl rounded-tr-none p-4 shadow-lg max-w-[80%]">
                           <p className="text-sm">I&apos;m great! Just trying out the new SolEcho messenger 🚀</p>
                           <div className="flex justify-end items-center mt-1">
                             <p className="text-xs text-white/80 mr-1">10:25 AM</p>
-                            <CheckCheck className="w-4 h-4 text-white/80" />
+                            <CheckCheck className="w-4 h-4 text-black" />
                           </div>
                         </div>
                       </div>
 
                       {/* Received message with encryption animation */}
                       <div className="flex mb-4 message-bubble" ref={addToObserver}>
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-3 flex-shrink-0">
-                          <Shield className="w-5 h-5 text-white" />
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-3 flex-shrink-0">
+                          <Shield className="w-5 h-5 text-black" />
                         </div>
                         <div className="bg-white/10 rounded-2xl rounded-tl-none p-4 shadow-lg max-w-[80%] message-bubble-animation border border-white/10">
                           <div className="flex items-center mb-2">
-                            <Lock className="w-4 h-4 text-[#B671FF] mr-2" />
-                            <p className="text-sm text-[#B671FF] font-medium">End-to-End Encrypted</p>
+                            <Lock className="w-4 h-4 text-[#32CD32] mr-2" />
+                            <p className="text-sm text-[#32CD32] font-medium">End-to-End Encrypted</p>
                           </div>
                           <p className="text-sm">Only you and I can read this message. No one else can access it, not even SolEcho! 🛡️</p>
                           <p className="text-xs text-white/60 mt-2">10:26 AM</p>
@@ -210,8 +210,8 @@ export default function EncryptedMessaging() {
 
                       {/* Typing indicator */}
                       <div className="flex mb-4">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-3 flex-shrink-0">
-                          <MessageSquare className="w-5 h-5 text-white" />
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-3 flex-shrink-0">
+                          <MessageSquare className="w-5 h-5 text-black" />
                         </div>
                         <div className="bg-white/10 rounded-2xl rounded-tl-none p-4 shadow-lg border border-white/10">
                           <div className="flex space-x-1">
@@ -233,8 +233,8 @@ export default function EncryptedMessaging() {
                           className="flex-1 border-none outline-none px-4 bg-transparent text-white placeholder-white/50"
                           readOnly
                         />
-                        <button className="w-10 h-10 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center hover:opacity-90 transition-opacity">
-                          <Send className="w-5 h-5 text-white" />
+                        <button className="w-10 h-10 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center hover:opacity-90 transition-opacity">
+                          <Send className="w-5 h-5 text-black" />
                         </button>
                       </div>
                     </div>
@@ -249,16 +249,14 @@ export default function EncryptedMessaging() {
                 <div
                   key={index}
                   ref={addToObserver}
-                  className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 feature-card"
+                  className="flex items-start p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-white/10 feature-card"
                 >
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 rounded-xl bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] bg-opacity-20">
-                      <feature.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-                      <p className="text-gray-300">{feature.description}</p>
-                    </div>
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-6 shadow-lg">
+                    <feature.icon className="h-6 w-6 text-black" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                    <p className="text-gray-300">{feature.description}</p>
                   </div>
                 </div>
               ))}

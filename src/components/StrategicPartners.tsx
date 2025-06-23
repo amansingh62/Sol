@@ -38,10 +38,9 @@ const StrategicPartners: React.FC = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-24 text-white relative overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#581c87]/20 to-[#141c2d]">
+    <section ref={sectionRef} className="py-24 text-white relative overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#0f172a]/20 to-[#141c2d]">
       {/* Animated background elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 animate-pulse"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#B671FF]/10 via-transparent to-transparent"></div>
+
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
@@ -60,7 +59,7 @@ const StrategicPartners: React.FC = () => {
             <div className="partners-slide">
               {partners.map((partner, index) => (
                 <div key={index} className="partner-logo group">
-                  <div className="relative w-48 h-32 flex items-center justify-center rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+                  <div className="relative w-48 h-32 flex items-center justify-center rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20 group-hover:shadow-lg group-hover:shadow-green-500/20">
                     <div className="relative h-12 w-full flex items-center justify-center">
                       <Image
                         src={partner.src}
@@ -72,7 +71,7 @@ const StrategicPartners: React.FC = () => {
                         unoptimized
                       />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#B671FF]/0 via-[#B671FF]/0 to-[#B671FF]/0 group-hover:from-[#B671FF]/5 group-hover:via-[#B671FF]/10 group-hover:to-[#B671FF]/5 transition-all duration-300 rounded-2xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#32CD32]/0 via-[#32CD32]/0 to-[#32CD32]/0 group-hover:from-[#32CD32]/5 group-hover:via-[#32CD32]/10 group-hover:to-[#32CD32]/5 transition-all duration-300 rounded-2xl"></div>
                   </div>
                 </div>
               ))}
@@ -82,7 +81,7 @@ const StrategicPartners: React.FC = () => {
             <div className="partners-slide ml-8">
               {partners.map((partner, index) => (
                 <div key={`duplicate-${index}`} className="partner-logo group">
-                  <div className="relative w-48 h-32 flex items-center justify-center rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+                  <div className="relative w-48 h-32 flex items-center justify-center rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20 group-hover:shadow-lg group-hover:shadow-green-500/20">
                     <div className="relative h-12 w-full flex items-center justify-center">
                       <Image
                         src={partner.src}
@@ -94,7 +93,7 @@ const StrategicPartners: React.FC = () => {
                         unoptimized
                       />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#B671FF]/0 via-[#B671FF]/0 to-[#B671FF]/0 group-hover:from-[#B671FF]/5 group-hover:via-[#B671FF]/10 group-hover:to-[#B671FF]/5 transition-all duration-300 rounded-2xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#32CD32]/0 via-[#32CD32]/0 to-[#32CD32]/0 group-hover:from-[#32CD32]/5 group-hover:via-[#32CD32]/10 group-hover:to-[#32CD32]/5 transition-all duration-300 rounded-2xl"></div>
                   </div>
                 </div>
               ))}

@@ -35,6 +35,7 @@ const StyledWrapper = styled.div`
     transform: scale(1.05);
     border-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 30px rgba(182, 113, 255, 0.2);
+    color: black;
   }
 
   button::before {
@@ -45,7 +46,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right, #B671FF 0%, #C577EE 50%, #E282CA 100%);
+    background-image: linear-gradient(to right, #32CD32 0%, #7CFC00 50%, #90EE90 100%);
     transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     z-index: -1;

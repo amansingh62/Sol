@@ -132,37 +132,30 @@ export default function CreatePosts() {
   }, []);
 
   return (
-    <section id="create-posts" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 overflow-hidden">
-      {/* Animated background elements - using transform3d for hardware acceleration */}
-      <div className="absolute inset-0 overflow-hidden will-change-transform">
-        <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-blob transform-gpu"></div>
-        <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-blob animation-delay-2000 transform-gpu"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl animate-blob animation-delay-4000 transform-gpu"></div>
-      </div>
-
+    <section id="create-posts" className="py-24 text-white relative bg-gradient-to-br from-slate-900 via-slate-900/20 to-slate-900 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 opacity-0 transform-gpu" ref={sectionRef}>
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 mb-6 animate-fade-in">
-            <Sparkles className="w-4 h-4 mr-2 text-[#B671FF] animate-pulse" />
+            <Sparkles className="w-4 h-4 mr-2 text-[#32CD32] animate-pulse" />
             <span className="text-sm font-medium text-white/90">Create Your Digital Legacy</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-title">
-            Create Your <span className="bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] text-transparent bg-clip-text animate-gradient">Echo</span>
+            Create Your <span className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] text-transparent bg-clip-text animate-gradient">Dart</span>
           </h2>
-          <div className="w-64 h-1 bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] mx-auto animate-line"></div>
+          <div className="w-64 h-1 bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] mx-auto animate-line"></div>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-lg animate-fade-in-up">
-            Share your thoughts, media, and experiences with the SolEcho community.
+            Share your thoughts, media, and experiences with the SolDart community.
             Your content, your rules, your blockchain.
           </p>
         </div>
 
         {/* Create Post Interface */}
-        <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500 animate-float shadow-2xl shadow-purple-500/10 transform-gpu">
+        <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500 animate-float shadow-2xl shadow-green-500/10 transform-gpu">
           {/* Post Input */}
           <div className="mb-8">
             <textarea
-              className="w-full h-32 bg-white/5 rounded-xl p-4 text-white placeholder-gray-400 border border-white/10 focus:border-[#B671FF] focus:ring-2 focus:ring-[#B671FF]/20 transition-all duration-300 resize-none hover:bg-white/10 backdrop-blur-sm"
+              className="w-full h-32 bg-white/5 rounded-xl p-4 text-white placeholder-gray-400 border border-white/10 focus:border-[#32CD32] focus:ring-2 focus:ring-[#32CD32]/20 transition-all duration-300 resize-none hover:bg-white/10 backdrop-blur-sm"
               placeholder={placeholderText}
             />
           </div>
@@ -176,8 +169,8 @@ export default function CreatePosts() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative">
-                  <option.icon className="w-5 h-5 text-[#B671FF] group-hover:scale-110 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-[#B671FF] blur-sm opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <option.icon className="w-5 h-5 text-[#32CD32] group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-[#32CD32] blur-sm opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                 </div>
                 <span className="text-sm text-gray-300 group-hover:text-white">{option.label}</span>
               </button>
@@ -190,14 +183,14 @@ export default function CreatePosts() {
               <div
                 key={`${feature.title}-${index}`}
                 ref={addToRefs}
-                className="bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 opacity-0 group hover:transform hover:scale-[1.02] shadow-lg shadow-purple-500/5 transform-gpu will-change-transform"
+                className="bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 opacity-0 group hover:transform hover:scale-[1.02] shadow-lg shadow-green-500/5 transform-gpu will-change-transform"
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300 relative overflow-hidden transform-gpu">
-                    <feature.icon className="w-6 h-6 text-white relative z-10" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300 relative overflow-hidden transform-gpu">
+                    <feature.icon className="w-6 h-6 text-black relative z-10" />
                     <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <h3 className="text-lg font-semibold text-white group-hover:text-[#B671FF] transition-colors duration-300">{feature.title}</h3>
+                  <h3 className="text-lg font-semibold text-white group-hover:text-[#32CD32] transition-colors duration-300">{feature.title}</h3>
                 </div>
                 <p className="text-sm text-gray-300 group-hover:text-white/90 transition-colors duration-300">{feature.description}</p>
               </div>
@@ -206,11 +199,11 @@ export default function CreatePosts() {
 
           {/* Post Button */}
           <div className="mt-8 flex justify-end">
-            <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 transform-gpu">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] opacity-100 transition-opacity duration-300 group-hover:opacity-90"></div>
+            <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-black transition-all duration-300 hover:scale-105 transform-gpu">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] opacity-100 transition-opacity duration-300 group-hover:opacity-90"></div>
               <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer">
                 <div className="relative flex items-center space-x-2 z-10">
-                  <span>Post to SolEcho</span>
+                  <span>Post to SolDart</span>
                   <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </Link>

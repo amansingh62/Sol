@@ -12,7 +12,7 @@ export default function MissionVision() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const target = entry.target as HTMLElement;
-        
+
         if (target.classList.contains('mission-section')) {
           target.style.animation = 'slideInLeft 0.8s ease-out forwards';
         } else if (target.classList.contains('vision-section')) {
@@ -22,7 +22,7 @@ export default function MissionVision() {
         } else {
           target.style.animation = 'fadeInUp 0.6s ease-out forwards';
         }
-        
+
         // Unobserve after animation triggers to improve performance
         observerRef.current?.unobserve(entry.target);
       }
@@ -70,14 +70,14 @@ export default function MissionVision() {
   ], []);
 
   return (
-    <section className="py-24 text-white relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+    <section className="py-24 text-white relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900/20 to-slate-900">
       <div ref={containerRef} className="container mx-auto px-4 relative z-10">
         {/* Section title */}
         <div className="text-center mb-16 opacity-0 animate-on-scroll section-title">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-white text-transparent bg-clip-text">
             Our Purpose
           </h2>
-          <div className="w-64 h-1 bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] mx-auto"></div>
+          <div className="w-64 h-1 bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] mx-auto"></div>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-lg">
             Redefining social media through blockchain technology and user empowerment
           </p>
@@ -87,8 +87,8 @@ export default function MissionVision() {
           {/* Mission Column */}
           <div className="mission-section flex flex-col bg-white/5 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10 opacity-0 animate-on-scroll">
             <div className="mb-6 flex items-center">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-4 shadow-lg">
-                <Target className="h-6 w-6 text-white" />
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-4 shadow-lg">
+                <Target className="h-6 w-6 text-black" />
               </div>
               <h2 className="text-3xl font-bold text-white">Our Mission</h2>
             </div>
@@ -101,8 +101,8 @@ export default function MissionVision() {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-start space-x-3">
-                    <div className="p-2 rounded-lg bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] bg-opacity-20">
-                      <item.icon className="h-5 w-5 text-white" />
+                    <div className="p-2 rounded-lg bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] bg-opacity-20">
+                      <item.icon className="h-5 w-5 text-black" />
                     </div>
                     <div>
                       <h4 className="font-bold text-white mb-1">{item.title}</h4>
@@ -117,8 +117,8 @@ export default function MissionVision() {
           {/* Vision Column */}
           <div className="vision-section flex flex-col bg-white/5 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10 opacity-0 animate-on-scroll">
             <div className="mb-6 flex items-center">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] flex items-center justify-center mr-4 shadow-lg">
-                <Eye className="h-6 w-6 text-white" />
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] flex items-center justify-center mr-4 shadow-lg">
+                <Eye className="h-6 w-6 text-black" />
               </div>
               <h2 className="text-3xl font-bold text-white">Our Vision</h2>
             </div>
@@ -131,8 +131,8 @@ export default function MissionVision() {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-start space-x-3">
-                    <div className="p-2 rounded-lg bg-gradient-to-r from-[#B671FF] via-[#C577EE] to-[#E282CA] bg-opacity-20">
-                      <item.icon className="h-5 w-5 text-white" />
+                    <div className="p-2 rounded-lg bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] bg-opacity-20">
+                      <item.icon className="h-5 w-5 text-black" />
                     </div>
                     <div>
                       <h4 className="font-bold text-white mb-1">{item.title}</h4>
