@@ -13,7 +13,7 @@ const EnhancedButton = memo(() => {
 
       {/* Button content */}
       <Link
-        href="https://app.solecho.io/"
+        href="https://app.soldart.io/"
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center space-x-2 z-10 font-semibold hover:opacity-80 transition-opacity"

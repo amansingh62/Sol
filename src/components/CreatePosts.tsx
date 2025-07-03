@@ -201,7 +201,7 @@ export default function CreatePosts() {
           <div className="mt-8 flex justify-end">
             <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-black transition-all duration-300 hover:scale-105 transform-gpu">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] opacity-100 transition-opacity duration-300 group-hover:opacity-90"></div>
-              <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://app.soldart.io/" target="_blank" rel="noopener noreferrer">
                 <div className="relative flex items-center space-x-2 z-10">
                   <span>Post to SolDart</span>
                   <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

@@ -57,7 +57,7 @@ export default function Header() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent"></div>
         <span className="inline-block">
           The Future of Social Media is Decentralized,{" "}
-          <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:opacity-80 transition-opacity">
+          <Link href="https://app.soldart.io/" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:opacity-80 transition-opacity">
             Start darting today!
           </Link>
         </span>
@@ -125,7 +125,7 @@ export default function Header() {
             </div>
 
             <div className="hidden md:block">
-              <Link href="https://app.solecho.io/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://app.soldart.io/" target="_blank" rel="noopener noreferrer">
                 <Button />
               </Link>
             </div>
