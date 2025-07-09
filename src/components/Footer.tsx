@@ -73,13 +73,13 @@ const Footer: React.FC = () => {
           </Link>
 
           <div className="flex items-center gap-6 md:gap-8">
-            <Link href="https://x.com/SolEcho_io" target="_blank" className="group">
+            <Link href="https://x.com/DartSol_io" target="_blank" className="group">
               <div className="p-2.5 md:p-3 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-gradient-to-r hover:from-[#32CD32] hover:via-[#7CFC00] hover:to-[#90EE90] transition-all duration-300 transform hover:scale-110">
                 <TbBrandTwitter className="text-2xl md:text-3xl text-white group-hover:text-black transition-colors" />
               </div>
             </Link>
 
-            <Link href="https://t.me/SolEcho" target="_blank" className="group">
+            <Link href="https://t.me/SolDart_io" target="_blank" className="group">
               <div className="p-2.5 md:p-3 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-gradient-to-r hover:from-[#32CD32] hover:via-[#7CFC00] hover:to-[#90EE90] transition-all duration-300 transform hover:scale-110">
                 <TbBrandTelegram className="text-2xl md:text-3xl text-white group-hover:text-black transition-colors" />
               </div>

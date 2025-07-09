@@ -46,8 +46,8 @@ export default function Header() {
 
   // Memoize social links to prevent recreation
   const socialLinks = useMemo(() => [
-    { icon: TbBrandTwitter, href: "https://x.com/SolEcho_io" },
-    { icon: TbBrandTelegram, href: "https://t.me/SolEcho" }
+    { icon: TbBrandTwitter, href: "https://x.com/DartSol_io" },
+    { icon: TbBrandTelegram, href: "https://t.me/SolDart_io" }
   ], []);
 
   return (
