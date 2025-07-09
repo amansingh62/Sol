@@ -130,7 +130,7 @@ export default function FeaturesSection() {
           </h2>
           <div className="w-64 h-1 bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] mx-auto"></div>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-lg">
-            SolEcho is a user-friendly protocol that allows users to
+            SolDart is a user-friendly protocol that allows users to
             communicate and interact in a fully decentralized ecosystem.
           </p>
         </div>

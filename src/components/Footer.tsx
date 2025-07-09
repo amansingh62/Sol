@@ -157,8 +157,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               {[
                 { text: "Discord", href: "#" },
-                { text: "Twitter", href: "https://x.com/SolEcho_io" },
-                { text: "Telegram", href: "https://t.me/SolEcho" },
+                { text: "Twitter", href: "https://x.com/DartSol_io" },
+                { text: "Telegram", href: "https://t.me/SolDart_io" },
                 { text: "GitHub", href: "#" }
               ].map((item, index) => (
                 <li key={index}>

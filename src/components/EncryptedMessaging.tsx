@@ -164,7 +164,7 @@ export default function EncryptedMessaging() {
                         <span className="text-lg font-bold text-black">S</span>
                       </div>
                       <div>
-                        <p className="font-bold text-black">SolEcho Messenger</p>
+                        <p className="font-bold text-black">SolDart Messenger</p>
                         <p className="text-xs text-black/80">Online</p>
                       </div>
                     </div>
@@ -185,7 +185,7 @@ export default function EncryptedMessaging() {
                       {/* Sent message */}
                       <div className="flex mb-4 justify-end">
                         <div className="bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] rounded-2xl rounded-tr-none p-4 shadow-lg max-w-[80%]">
-                          <p className="text-sm">I&apos;m great! Just trying out the new SolEcho messenger 🚀</p>
+                          <p className="text-sm">I&apos;m great! Just trying out the new SolDart messenger 🚀</p>
                           <div className="flex justify-end items-center mt-1">
                             <p className="text-xs text-white/80 mr-1">10:25 AM</p>
                             <CheckCheck className="w-4 h-4 text-black" />
@@ -203,7 +203,7 @@ export default function EncryptedMessaging() {
                             <Lock className="w-4 h-4 text-[#32CD32] mr-2" />
                             <p className="text-sm text-[#32CD32] font-medium">End-to-End Encrypted</p>
                           </div>
-                          <p className="text-sm">Only you and I can read this message. No one else can access it, not even SolEcho! 🛡️</p>
+                          <p className="text-sm">Only you and I can read this message. No one else can access it, not even SolDart! 🛡️</p>
                           <p className="text-xs text-white/60 mt-2">10:26 AM</p>
                         </div>
                       </div>

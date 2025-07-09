@@ -64,7 +64,7 @@ export default function MissionVision() {
     { icon: BookOpen, title: "Content Integrity", description: "Leverage blockchain verification to ensure all content is authentic and tamper-proof." },
     { icon: Coins, title: "Tokenized Incentives", description: "Reward users for their content, engagement, and contributions through decentralized monetization." },
     { icon: Bot, title: "AI-Enhanced Experience", description: "Use AI to boost content discovery, personalize experiences, and drive meaningful engagement." },
-    { icon: Lightbulb, title: "Digital Innovation", description: "SolEcho as the catalyst for a new era of digital interaction—where technology serves humanity." },
+    { icon: Lightbulb, title: "Digital Innovation", description: "SolDart as the catalyst for a new era of digital interaction—where technology serves humanity." },
     { icon: Search, title: "Transparency", description: "A platform with transparent algorithms, user-controlled monetization, and community-driven development." },
     { icon: Rocket, title: "Solana Powered", description: "Building the future of social media on the powerful Solana blockchain for speed and scalability." }
   ], []);

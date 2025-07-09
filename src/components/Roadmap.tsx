@@ -138,7 +138,7 @@ export default function Roadmap() {
             <div className="absolute -bottom-6 w-64 -left-4 right-0 h-1 bg-gradient-to-r from-[#32CD32] via-[#7CFC00] to-[#90EE90] transform scale-x-0 transition-transform duration-500 origin-left roadmap-underline"></div>
           </h2>
           <p className="mt-6 text-gray-300 max-w-2xl mx-auto text-lg">
-            Our strategic plan for building and evolving the SolEcho platform
+            Our strategic plan for building and evolving the SolDart platform
           </p>
         </div>
 
